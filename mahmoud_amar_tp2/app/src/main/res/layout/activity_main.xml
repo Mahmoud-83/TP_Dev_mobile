@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:textAlignment="textStart"
+    android:background="@drawable/app_background"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:padding="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+         />
+<TextView
+    android:id="@+id/idAge"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/age"
+    android:layout_marginTop="20dp"
+    android:textSize="25sp"
+    />
+    <SeekBar
+        android:id="@+id/sbAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:max="120"
+/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/text"
+        android:textSize="25sp"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/btnoui"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="OUI"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+        <RadioButton
+            android:id="@+id/btnnon"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="NON"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/valeur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:text=""
+        android:hint="@string/valeur"
+        android:inputType="numberDecimal"
+        />
+    <Button
+        android:id="@+id/btnConsulter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="CONSULTER"
+        android:textSize="18sp"
+        android:onClick="Calculer"
+        />
+
+    <TextView
+        android:id="@+id/textresultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="..."
+        android:textSize="25sp"
+        android:textAlignment="center"
+        />
+</LinearLayout>
