@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">mahmoud_amar_tp2</string>
+    <string name="title">Mesure de niveau de glycémie</string>
+    <string name="age">Votre âge :</string>
+    <string name="text">Est-ce que vous jeûnez ?</string>
+    <string name="valeur">Valeur mesurée (en mmol/l)</string>
+</resources>
